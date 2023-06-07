@@ -6,8 +6,8 @@ export class NewsItem extends Component {
   render() {
     let { title, description, imageUrl, NewsUrl,date,author } = this.props;
     return (
-      <div className="card my-3" style={{ width: "18rem", margin: "auto" }}>
-        <img style={{height:"200px"}} src={imageUrl===null?img:imageUrl} className="card-img-top" alt="img" />
+      <div className="card my-3">
+        <img  src={imageUrl===null?img:imageUrl} className="card-img-top" alt="img" />
         
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
